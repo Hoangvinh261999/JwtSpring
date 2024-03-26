@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=Lab7;encrypt=false;trustServerCertificate=true
+    username: sa
+    password: 12345
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
